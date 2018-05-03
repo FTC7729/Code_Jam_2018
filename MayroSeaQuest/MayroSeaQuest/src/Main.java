@@ -7,6 +7,7 @@ public class Main {
 			DIRECTIONS,
 			SUBMARINE_RACE,
 			TEXT_ADVENTURE,
+			CREDITS,
 			END
 	}
 	
@@ -16,7 +17,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		Main epicGame = new Main();
 		
-		
+		epicGame.gameLoop(); // This runs the game for us
 
 	} // main
 	
@@ -25,22 +26,31 @@ public class Main {
 	} // Main
 
 	public void gameLoop() {
-		switch (this.enumGameMode) {
-		case CALIBRATION:
-			break;
-		case INTRO:
-			break;
-		case DIRECTIONS:
-			break;
-		case SUBMARINE_RACE:
-			break;
-		case TEXT_ADVENTURE:
-			break;
-		case END:
-		default:
-				break;
+		boolean bLoop = true; 
 		
-		} // gameLoop switch
+		while (bLoop) {
+		
+			switch (this.enumGameMode) {
+			case CALIBRATION:
+				break;
+			case INTRO:
+				break;
+			case DIRECTIONS:
+				break;
+			case SUBMARINE_RACE:
+				break;
+			case TEXT_ADVENTURE:
+				break;
+			case CREDITS:
+				break;
+			case END:
+			default:
+				// Game is over, let's break out of the while loop
+				bLoop = false;
+				break;
+			
+			} // gameLoop switch
+		} // bLoop
 
 	} // gameLoop
 	
