@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Main {
 	
@@ -12,6 +13,8 @@ public class Main {
 	}
 	
 	public  GAME_MODE enumGameMode;
+	
+	protected Scanner	myScanner;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -23,15 +26,20 @@ public class Main {
 	
 	Main () {
 		this.enumGameMode = GAME_MODE.CALIBRATION;
+		this.myScanner = new Scanner(System.in);
 	} // Main
 
 	public void gameLoop() {
 		boolean bLoop = true; 
 		
+		ScreenManager myScreenManager = new ScreenManager();
+		myScreenManager.init(this.myScanner);
+		
 		while (bLoop) {
 		
 			switch (this.enumGameMode) {
 			case CALIBRATION:
+				myScreenManager.calibrateScreen(); // Blocking call waits for user input
 				break;
 			case INTRO:
 				break;
