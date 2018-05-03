@@ -40,16 +40,22 @@ public class Main {
 			switch (this.enumGameMode) {
 			case CALIBRATION:
 				myScreenManager.calibrateScreen(); // Blocking call waits for user input
+				this.enumGameMode = enumGameMode.INTRO;
 				break;
 			case INTRO:
+				this.enumGameMode = enumGameMode.DIRECTIONS;
 				break;
 			case DIRECTIONS:
+				this.enumGameMode = enumGameMode.SUBMARINE_RACE;
 				break;
 			case SUBMARINE_RACE:
+				this.enumGameMode = enumGameMode.TEXT_ADVENTURE;
 				break;
 			case TEXT_ADVENTURE:
+				this.enumGameMode = enumGameMode.CREDITS;
 				break;
 			case CREDITS:
+				this.enumGameMode = enumGameMode.END;
 				break;
 			case END:
 			default:
