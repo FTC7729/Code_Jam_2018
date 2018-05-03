@@ -36,10 +36,8 @@ Schedule Below :envelope_with_arrow:
 :arrow_right:  :raised_hands: The Game for this year's competition will be _*Revealed*_ at 4:00pm!! 
 :arrow_right:  Find your teammates, create a team name, register for the Code Jam, and begin the awesomeness of designing your Text Adventure Game in Java!
 
-:calendar: *Wednesday May 2nd*
-:clock330: Time: 3:30pm to 8:30pm 
-:school: LHMS - Tech Ed Room
-:arrow_right:  :space_invader: Open team time.  Coordinate with your team members and come to our open lab time to create your awesome game!
+alendar: *Wednesday May 2nd*
+:negative_squared_cross_mark: NO MEETING
 
 :calendar: *Thursday May 3rd*
 :clock330: Time: 3:30pm to 8:30pm 
@@ -47,11 +45,9 @@ Schedule Below :envelope_with_arrow:
 :arrow_right:  :space_invader: Open team time.
 
 :calendar: *Friday May 4th*
-:clock330: Time: 3:30pm to 8:30pm 
-:school: LHMS - Tech Ed Room
-:arrow_right:  :space_invader: Open team time.
+:negative_squared_cross_mark: NO MEETING
 
 :calendar: *Saturday May 5th*
 :arrow_right:  :star2: DAY OF CODE JAM :star-struck:
 :school:  LHMS - *NEW LOCATION* - CAFETERIA!! 
-:clock8:  Starting at 8am!
+:clock8:  Starting at 8am - Noon!
