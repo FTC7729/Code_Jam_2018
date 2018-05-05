@@ -51,7 +51,7 @@ public class Main {
 			case SUBMARINE_RACE:
 				Race myRace = new Race();
 				myRace.init(this.myScanner);
-				myRace.;
+				myRace.raceLoop();
 				this.enumGameMode = enumGameMode.TEXT_ADVENTURE;
 				break;
 			case TEXT_ADVENTURE:
