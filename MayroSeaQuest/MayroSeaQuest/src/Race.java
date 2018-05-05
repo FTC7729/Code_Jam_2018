@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import utilityFunctions.Utilities;
 
 public class Race {
 	
@@ -16,6 +17,7 @@ public class Race {
 	protected STATE_HORIZONTAL	enumHorizontal;
 	protected STATE_VERTICAL	enumVertical;
 	protected Submarine	mySubmarine;
+	protected Utilities utilityObject;
 	
 	public Race() {
 		mySubmarine = new Submarine();
@@ -39,12 +41,12 @@ public class Race {
 			UpdateSubPosition();
 			
 			mySubmarine.render(charMatrix, 0, 0);
+			utilityObject.pause(100);
 			
 		} // while bLoop
 	} // Race Loop
 	
 	protected void GetInput() {
-		while (this.myScanner.hasNext()) {
 			String	strDirection = this.myScanner.next();
 			switch( strDirection ) {
 			case "W":
@@ -64,7 +66,6 @@ public class Race {
 				this.enumVertical = STATE_VERTICAL.DOWN;
 				break;
 			} // switch keypress
-		} // while hasnext
 	} // GetInput
 	
 	protected void UpdateSubPosition() {
