@@ -4,13 +4,13 @@ public class Submarine extends Sprite {
 	@Override
 	char[][] render(char[][] charSprite, int iX, int iY) {
 		
-		charSprite  [iX+1][iY+1] = '/'; charSprite [iX+2][iY+1] = '+'; 
-		charSprite [iX+3][iY+1] = '_'; charSprite [iX+4][iY+1] = '_'; 
-		charSprite [iX + 1][iY+2] = '|'; charSprite [iX+4][iY+2] = 'o';
-		charSprite [iX +5][iY+2] = '\\'; charSprite [iX + 1][iY+3] = '\\';
-		charSprite [iX + 1][iY+3] = '_'; charSprite [iX][iY+2] = '+';
-		charSprite [iX+3][iY+3] = '_'; charSprite [iX+4][iY+3] = '+';
-		charSprite [iX+5][iY+3] = '/';
+		charSprite  [this.iX+1][this.iY+1] = '/'; charSprite [this.iX+2][this.iY+1] = '+'; 
+		charSprite [this.iX+3][this.iY+1] = '_'; charSprite [this.iX+4][this.iY+1] = '_'; 
+		charSprite [this.iX + 1][this.iY+2] = '|'; charSprite [this.iX+4][this.iY+2] = 'o';
+		charSprite [this.iX +5][this.iY+2] = '\\'; charSprite [this.iX + 1][this.iY+3] = '\\';
+		charSprite [this.iX + 1][this.iY+3] = '_'; charSprite [this.iX][this.iY+2] = '+';
+		charSprite [this.iX+3][this.iY+3] = '_'; charSprite [this.iX+4][this.iY+3] = '+';
+		charSprite [this.iX+5][this.iY+3] = '/';
 
 		return charSprite;
 	}

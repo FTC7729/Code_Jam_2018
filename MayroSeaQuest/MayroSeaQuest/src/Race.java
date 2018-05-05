@@ -30,12 +30,15 @@ public class Race {
 	
 	public void raceLoop() {
 		boolean bLoop = true;
+		char[][] charMatrix = new char[4][3];
 		
 		myScanner.useDelimiter("");
 		
 		while ( bLoop ) {
 			GetInput();
 			UpdateSubPosition();
+			
+			mySubmarine.render(charMatrix, 0, 0);
 			
 		} // while bLoop
 	} // Race Loop
